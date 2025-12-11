@@ -2,11 +2,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
     [Header("UI")]
     [HideInInspector] public Item item;
     public Image image;
+
+    public ItemType requiredType;
 
     [HideInInspector] public Transform parentAfterDrag;
 
@@ -34,5 +36,15 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public void OnEndDrag(PointerEventData eventData) {
         image.raycastTarget = true;
         transform.SetParent(parentAfterDrag);
+    }
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        Debug.Log("UI element kliknut!");
+        if (item.type != requiredType) return;
+        var canvas = GameObject.Find("Canvas");              // ime točno kao u Hierarchy
+        GameObject collectedZoomed = canvas.transform
+                              .Find("CollectedZoomed")
+                              .gameObject;
+        collectedZoomed.SetActive(true);
     }
 }
