@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
+using Unity.Mathematics;
 
 public class PuzzleManager : MonoBehaviour
 {
@@ -7,6 +9,11 @@ public class PuzzleManager : MonoBehaviour
     public string nextSceneName = "SampleScene";
 
     bool levelCompleted = false;   // da se ne poziva više puta
+
+    public Animator anim;
+    public GameObject current;
+
+    public GameObject currentSound;
 
     void Start()
     {
@@ -36,11 +43,21 @@ public class PuzzleManager : MonoBehaviour
 
         Debug.Log($"goodCount = {goodCount}");
 
-        if (goodCount == 2)
+        IEnumerator WaitFiveSeconds()
         {
+            Debug.Log("Čekam 1 sekundu...");
+            yield return new WaitForSeconds(3.5f);
+            Debug.Log("Gotovo!");
             Debug.Log("Pogodena kombinacija, loadam scenu!");
             levelCompleted = true;
             SceneManager.LoadScene(nextSceneName);
+        }
+        if (goodCount == 2)
+        {
+            current.SetActive(true);
+            currentSound.SetActive(true);
+            anim.SetTrigger("CurrentStart");
+            StartCoroutine(WaitFiveSeconds());
         }
     }
 
