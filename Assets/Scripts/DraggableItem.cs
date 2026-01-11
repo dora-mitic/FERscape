@@ -17,7 +17,7 @@ public class DraggableItem : MonoBehaviour
         startPosition = transform.position;
 
         if (puzzleManager == null)
-            puzzleManager = FindObjectOfType<PuzzleManager>();
+            puzzleManager = FindAnyObjectByType<PuzzleManager>();
     }
 
     void OnMouseDown()

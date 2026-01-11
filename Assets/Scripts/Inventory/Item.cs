@@ -19,7 +19,9 @@ public class Item : ScriptableObject
 public enum ItemType
 {
     PaperFrekvencija,
-    USB
+    USB,
+    BijelaKnjiga,
+    CrnaKnjiga
 }
 
 public enum ActionType
