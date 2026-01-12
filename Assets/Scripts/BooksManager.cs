@@ -13,6 +13,9 @@ public class BooksManager : MonoBehaviour
     [Header("Puzzle Lock")]
     public bool puzzleEnabled = false;
 
+    [Header("Drawer - otvara se KAD JE RJEŠENO")]
+    public GameObject drawer;
+
     private void Awake()
     {
         if (Instance == null)
@@ -25,20 +28,12 @@ public class BooksManager : MonoBehaviour
         }
     }
 
-    [Header("Drawer")]
-    public GameObject drawer;
-
     public void EnablePuzzle()
     {
         puzzleEnabled = true;
         Debug.Log("Puzzle otključan!");
-        
-        if (drawer != null)
-        {
-            drawer.SetActive(true);
-        }
+        // NEMA OTVARANJA LADICE OVDJE!
     }
-
 
     public void OnBookClicked(Book book)
     {
@@ -114,6 +109,13 @@ public class BooksManager : MonoBehaviour
         }
 
         Debug.Log("Knjige tocno poslozene – EXIT!");
+
+        // OTVORI LADICU TEK NAKON RJEŠENJA
+        if (drawer != null)
+        {
+            drawer.SetActive(true);
+            Debug.Log("Ladica otvorena!");
+        }
 
         if (!string.IsNullOrEmpty(nextSceneName))
         {

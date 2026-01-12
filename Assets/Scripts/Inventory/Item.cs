@@ -21,7 +21,9 @@ public enum ItemType
     PaperFrekvencija,
     USB,
     BijelaKnjiga,
-    CrnaKnjiga
+    CrnaKnjiga,
+    Baterija,
+    Robotic
 }
 
 public enum ActionType
