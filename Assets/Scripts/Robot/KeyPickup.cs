@@ -13,6 +13,7 @@ public class KeyPickup : MonoBehaviour
     [SerializeField] private float displayDuration = 3f;
     [SerializeField] private float stripeRotationSpeed = 100f;
     [SerializeField][Range(0f, 1f)] private float stripeAlpha = 0.8f;
+    [SerializeField][Range(0f, 1f)] private float screenDarkenAmount = 0.7f;
 
     private bool keyCollected = false;
     private Material stripeMaterial;
@@ -87,6 +88,24 @@ public class KeyPickup : MonoBehaviour
 
         keyCollected = true;
 
+        // Play the yay sound
+        GameObject robot = GameObject.Find("robot_0");
+        if (robot != null)
+        {
+            RobotSoundManager soundManager = robot.GetComponent<RobotSoundManager>();
+            if (soundManager != null)
+            {
+                soundManager.PlayYaySound();
+            }
+
+            // Disable the vignette effect
+            RobotVignette vignette = Camera.main.GetComponent<RobotVignette>();
+            if (vignette != null)
+            {
+                vignette.enabled = false;
+            }
+        }
+
         // Hide the key in the game world
         GetComponent<SpriteRenderer>().enabled = false;
 
@@ -102,6 +121,14 @@ public class KeyPickup : MonoBehaviour
         if (keyFoundPanel != null)
         {
             keyFoundPanel.SetActive(true);
+
+            // Set dark background instead of stripes
+            if (stripeBackground != null)
+            {
+                // Remove the stripe material and just use a solid dark color
+                stripeBackground.material = null;
+                stripeBackground.color = new Color(0, 0, 0, screenDarkenAmount);
+            }
 
             // Set the key sprite in the UI
             if (keyImage != null)

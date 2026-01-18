@@ -204,7 +204,7 @@ Transform:
   m_GameObject: {fileID: 24407596}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: -3, z: -1}
+  m_LocalPosition: {x: 6, y: -3, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -362,10 +362,11 @@ MonoBehaviour:
   keyFoundPanel: {fileID: 361273982}
   keyImage: {fileID: 154674056}
   keyFoundText: {fileID: 0}
-  stripeBackground: {fileID: 808868282}
+  stripeBackground: {fileID: 0}
   displayDuration: 100
   stripeRotationSpeed: 100
   stripeAlpha: 0.8
+  screenDarkenAmount: 0.7
 --- !u!1 &154674054
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,7 +402,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 150, y: 150}
+  m_SizeDelta: {x: 340, y: 340}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &154674056
 MonoBehaviour:
@@ -471,7 +472,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 808868281}
   - {fileID: 154674055}
   - {fileID: 1671843718}
   m_Father: {fileID: 2087398946}
@@ -494,7 +494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.92156863}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -798,78 +798,6 @@ MonoBehaviour:
   darknessColor: {r: 0, g: 0, b: 0, a: 1}
   maxDarkness: 0.996
   robot: {fileID: 0}
---- !u!1 &808868280
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 808868281}
-  - component: {fileID: 808868283}
-  - component: {fileID: 808868282}
-  m_Layer: 5
-  m_Name: StripeBackground
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &808868281
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808868280}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 361273983}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &808868282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808868280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 0}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &808868283
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808868280}
-  m_CullTransparentMesh: 1
 --- !u!1 &819332617
 GameObject:
   m_ObjectHideFlags: 0
@@ -1567,6 +1495,7 @@ GameObject:
   - component: {fileID: 1434287718}
   - component: {fileID: 1434287721}
   - component: {fileID: 1434287720}
+  - component: {fileID: 1434287722}
   m_Layer: 0
   m_Name: robot_0
   m_TagString: Player
@@ -1695,6 +1624,26 @@ MonoBehaviour:
   spriteUpRight: {fileID: -2185472608353246101, guid: 8be3fbacd4d4f844b9401d7e51b6edad, type: 3}
   spriteDownLeft: {fileID: -2185472608353246101, guid: 8be3fbacd4d4f844b9401d7e51b6edad, type: 3}
   spriteDownRight: {fileID: -2185472608353246101, guid: 8be3fbacd4d4f844b9401d7e51b6edad, type: 3}
+--- !u!114 &1434287722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434287717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec336c6cc1e02a2499a3f8c8208935a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RobotSoundManager
+  movementSound: {fileID: 8300000, guid: 8ab60169910c4974095aa37c2e09ecea, type: 3}
+  bump1Sound: {fileID: 8300000, guid: 407db647026a12f468c99064f25d25bc, type: 3}
+  bump2Sound: {fileID: 8300000, guid: 407db647026a12f468c99064f25d25bc, type: 3}
+  bump3Sound: {fileID: 8300000, guid: 641986fb12bdcdd4a89f6d15ee4f3acc, type: 3}
+  robotYaySound: {fileID: 8300000, guid: 025165744254128478721179a4bc5499, type: 3}
+  movementVolume: 0.5
+  bumpVolume: 0.4
+  yayVolume: 1
 --- !u!1 &1509334312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1889,7 +1838,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\nKlju\u010D FER-a prona\u0111en!"
+  m_text: "\n\n\nKlju\u010D FER-a prona\u0111en!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1898,8 +1847,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294308095
+  m_fontColor: {r: 1, g: 0.9411765, b: 0.9607844, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2053,7 +2002,7 @@ Transform:
   m_GameObject: {fileID: 1794839444}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.8, y: -4, z: -1}
+  m_LocalPosition: {x: 2.8, y: -4, z: -5}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

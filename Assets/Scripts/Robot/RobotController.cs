@@ -18,11 +18,13 @@ public class RobotController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
     private Vector2 movement;
+    private RobotSoundManager soundManager;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        soundManager = GetComponent<RobotSoundManager>();
 
         // Configure Rigidbody2D for proper collision
         if (rb != null)
@@ -30,6 +32,17 @@ public class RobotController : MonoBehaviour
             rb.bodyType = RigidbodyType2D.Dynamic;
             rb.gravityScale = 0f; // No gravity for top-down view
             rb.constraints = RigidbodyConstraints2D.FreezeRotation; // Prevent rotation
+            rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+        }
+        else
+        {
+            // Add Rigidbody2D if it doesn't exist
+            rb = gameObject.AddComponent<Rigidbody2D>();
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            rb.gravityScale = 0f;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+            Debug.Log("Auto-added Rigidbody2D to robot");
         }
 
         // Make sure robot has a collider
@@ -71,6 +84,26 @@ public class RobotController : MonoBehaviour
         else
         {
             transform.position += (Vector3)(movement * moveSpeed * Time.fixedDeltaTime);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Debug log to see if collision is detected
+        Debug.Log($"Robot collided with: {collision.gameObject.name}");
+
+        // Play bump sound when colliding with anything that's not the key
+        if (!collision.gameObject.name.Contains("key"))
+        {
+            if (soundManager != null)
+            {
+                Debug.Log("Playing bump sound!");
+                soundManager.PlayBumpSound();
+            }
+            else
+            {
+                Debug.LogWarning("RobotSoundManager not found!");
+            }
         }
     }
 
