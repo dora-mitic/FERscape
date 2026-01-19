@@ -64,7 +64,7 @@ public class LockControllerDoor : MonoBehaviour
             Debug.Log("Lokot otkljucan! Kod = " + code);
             door.isOpen += 1;
             anim.SetTrigger("OpenLock");
-
+            SFXManager.instance.PlayElectricDamage();
         }
     }
 }

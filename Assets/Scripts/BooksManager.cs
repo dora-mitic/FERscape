@@ -110,6 +110,9 @@ public class BooksManager : MonoBehaviour
 
         Debug.Log("Knjige tocno poslozene – EXIT!");
 
+        SFXManager.instance.PlayDrawerOpen();
+
+
         // OTVORI LADICU TEK NAKON RJEŠENJA
         if (drawer != null)
         {
