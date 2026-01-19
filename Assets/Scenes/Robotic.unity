@@ -341,7 +341,7 @@ Transform:
   m_GameObject: {fileID: 150159264}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 3, z: 0}
+  m_LocalPosition: {x: 1, y: 3, z: -0.1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -883,7 +883,7 @@ Transform:
   m_GameObject: {fileID: 819332617}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 3.7, z: 0}
+  m_LocalPosition: {x: -2, y: 3.7, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1642,7 +1642,7 @@ MonoBehaviour:
   bump3Sound: {fileID: 8300000, guid: 641986fb12bdcdd4a89f6d15ee4f3acc, type: 3}
   robotYaySound: {fileID: 8300000, guid: 025165744254128478721179a4bc5499, type: 3}
   movementVolume: 0.5
-  bumpVolume: 0.4
+  bumpVolume: 0.2
   yayVolume: 1
 --- !u!1 &1509334312
 GameObject:
