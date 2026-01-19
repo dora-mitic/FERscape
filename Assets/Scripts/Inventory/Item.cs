@@ -20,6 +20,8 @@ public enum ItemType
 {
     PaperFrekvencija,
     USB,
+    PaperBazaPodsjetnik,
+    PaperBazaRjesenje,
     BijelaKnjiga,
     CrnaKnjiga,
     Baterija,
