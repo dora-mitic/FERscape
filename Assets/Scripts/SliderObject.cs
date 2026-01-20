@@ -55,7 +55,7 @@ public class SliderObject : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 
     // 7. Pretvori taj omjer u frekvenciju (ovdje 100–1000)
     float minFreq = 0f;
-    float maxFreq = 20f;
+    float maxFreq = 10f;
     freq = Mathf.Lerp(minFreq, maxFreq, t);
 
     // 8. Pošalji frekvenciju u text input

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BijelaKnjiga
   m_EditorClassIdentifier: Assembly-CSharp::Item
   tile: {fileID: 0}
-  type: 0
+  type: 4
   actionType: 0
   range: {x: 5, y: 4}
   image: {fileID: 1299812916357552863, guid: 10ab06fd7265b824c8ce9257e8e8410b, type: 3}

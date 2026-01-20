@@ -7,8 +7,7 @@ public class Door : MonoBehaviour,  IPointerClickHandler
     public int isOpen = 0;
 
     [Header("References")]
-    public GameObject nextScene;
-    public GameObject thisScene;
+    public GameObject openDoor;
     public GameObject locker;
 
     
@@ -19,8 +18,7 @@ public class Door : MonoBehaviour,  IPointerClickHandler
 
         if (isOpen == 3)
         {
-            nextScene.SetActive(true);
-            thisScene.SetActive(false);
+            openDoor.SetActive(true);
         }
         else
         {

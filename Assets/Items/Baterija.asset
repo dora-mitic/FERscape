@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Baterija
   m_EditorClassIdentifier: Assembly-CSharp::Item
   tile: {fileID: 0}
-  type: 0
+  type: 6
   actionType: 0
   range: {x: 5, y: 4}
   image: {fileID: -5184977042946491676, guid: 969b5304956c1504a8e14cde0933fc41, type: 3}

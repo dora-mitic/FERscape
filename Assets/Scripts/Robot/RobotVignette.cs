@@ -3,8 +3,8 @@ using UnityEngine;
 public class RobotVignette : MonoBehaviour
 {
     [Header("Vignette Settings")]
-    [SerializeField] private float visibleRadius = 3f;
-    [SerializeField] private float fadeDistance = 2f;
+    [SerializeField] private float visibleRadius = 1f;
+    [SerializeField] private float fadeDistance = 1f;
     [SerializeField] private Color darknessColor = Color.black;
     [SerializeField][Range(0f, 1f)] private float maxDarkness = 0.95f;
 
