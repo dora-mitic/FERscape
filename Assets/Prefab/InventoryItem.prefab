@@ -91,6 +91,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   item: {fileID: 0}
   image: {fileID: 5697323843242656599}
+  requiredType1: 0
+  requiredType2: 2
+  requiredType3: 7
+  requiredType: 6
+  CollectedZoomed: {fileID: 0}
   parentAfterDrag: {fileID: 0}
 --- !u!114 &-8570778508885146672
 MonoBehaviour:

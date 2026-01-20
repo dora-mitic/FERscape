@@ -5,15 +5,7 @@ public class KeyPickup : MonoBehaviour
 {
     [Header("UI References")]
     [SerializeField] private GameObject keyFoundPanel;
-    [SerializeField] private Image keyImage;
-    [SerializeField] private Text keyFoundText;
-    [SerializeField] private RawImage stripeBackground;
 
-    [Header("Settings")]
-    [SerializeField] private float displayDuration = 3f;
-    [SerializeField] private float stripeRotationSpeed = 100f;
-    [SerializeField][Range(0f, 1f)] private float stripeAlpha = 0.8f;
-    [SerializeField][Range(0f, 1f)] private float screenDarkenAmount = 0.7f;
 
     private bool keyCollected = false;
     private Material stripeMaterial;
@@ -39,15 +31,6 @@ public class KeyPickup : MonoBehaviour
         }
 
         // Create the stripe material
-        if (stripeBackground != null)
-        {
-            Shader shader = Shader.Find("Hidden/RadialStripes");
-            if (shader != null)
-            {
-                stripeMaterial = new Material(shader);
-                stripeBackground.material = stripeMaterial;
-            }
-        }
     }
 
     void Update()
@@ -62,14 +45,6 @@ public class KeyPickup : MonoBehaviour
             {
                 CollectKey();
             }
-        }
-
-        // Rotate stripes if panel is active
-        if (keyFoundPanel != null && keyFoundPanel.activeSelf && stripeMaterial != null)
-        {
-            float rotation = Time.time * stripeRotationSpeed;
-            stripeMaterial.SetFloat("_Rotation", rotation);
-            stripeMaterial.SetFloat("_Alpha", stripeAlpha);
         }
     }
 
@@ -112,8 +87,6 @@ public class KeyPickup : MonoBehaviour
         // Show the key found panel
         ShowKeyFoundScreen();
 
-        // Hide the panel after duration
-        Invoke("HideKeyFoundScreen", displayDuration);
     }
 
     void ShowKeyFoundScreen()
@@ -121,46 +94,6 @@ public class KeyPickup : MonoBehaviour
         if (keyFoundPanel != null)
         {
             keyFoundPanel.SetActive(true);
-
-            // Set dark background instead of stripes
-            if (stripeBackground != null)
-            {
-                // Remove the stripe material and just use a solid dark color
-                stripeBackground.material = null;
-                stripeBackground.color = new Color(0, 0, 0, screenDarkenAmount);
-            }
-
-            // Set the key sprite in the UI
-            if (keyImage != null)
-            {
-                SpriteRenderer sr = GetComponent<SpriteRenderer>();
-                if (sr != null && sr.sprite != null)
-                {
-                    keyImage.sprite = sr.sprite;
-                }
-            }
-
-            // Set the text
-            if (keyFoundText != null)
-            {
-                keyFoundText.text = "KEY FOUND!";
-            }
-        }
     }
-
-    void HideKeyFoundScreen()
-    {
-        if (keyFoundPanel != null)
-        {
-            keyFoundPanel.SetActive(false);
-        }
-    }
-
-    void OnDestroy()
-    {
-        if (stripeMaterial != null)
-        {
-            Destroy(stripeMaterial);
-        }
-    }
+}
 }

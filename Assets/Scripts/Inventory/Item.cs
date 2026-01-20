@@ -25,7 +25,8 @@ public enum ItemType
     BijelaKnjiga,
     CrnaKnjiga,
     Baterija,
-    Robotic
+    Robotic,
+    Key
 }
 
 public enum ActionType

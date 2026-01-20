@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Robotic
   m_EditorClassIdentifier: Assembly-CSharp::Item
   tile: {fileID: 0}
-  type: 0
+  type: 7
   actionType: 0
   range: {x: 5, y: 4}
   image: {fileID: -2185472608353246101, guid: 8be3fbacd4d4f844b9401d7e51b6edad, type: 3}

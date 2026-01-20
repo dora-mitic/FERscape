@@ -6,7 +6,7 @@ using Unity.Mathematics;
 public class PuzzleManager : MonoBehaviour
 {
     public DropSlot[] slots;
-    public string nextSceneName = "SampleScene";
+    public string nextSceneName = "Ferscape";
 
     bool levelCompleted = false;   // da se ne poziva više puta
 

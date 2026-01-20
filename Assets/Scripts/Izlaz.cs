@@ -1,22 +1,23 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Door : MonoBehaviour,  IPointerClickHandler
+public class Izlaz : MonoBehaviour,  IPointerClickHandler
 {
     [Header("States")]
-    public int isOpen = 0;
 
     [Header("References")]
     public GameObject openDoor;
     public GameObject locker;
+    public LockDropZone lockDropZone;
 
     
 
     // OVO SE POZIVA kada korisnik klikne UI element
     public void OnPointerClick(PointerEventData eventData)
     {
+        Debug.Log(lockDropZone.isOpened);
 
-        if (isOpen == 3)
+        if (lockDropZone.isOpened == true)
         {
             openDoor.SetActive(true);
         }

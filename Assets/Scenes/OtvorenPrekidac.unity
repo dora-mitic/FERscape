@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 38, y: 142}
-  m_SizeDelta: {x: 17.8781, y: 123.3186}
+  m_AnchoredPosition: {x: 26, y: 95.71664}
+  m_SizeDelta: {x: 17.8781, y: 78.4081}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &68749006
 MonoBehaviour:
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -627,8 +627,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4858609, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -60.2799, y: -52.19519}
-  m_SizeDelta: {x: 77.1467, y: 147.2397}
+  m_AnchoredPosition: {x: -40.607315, y: -33.75}
+  m_SizeDelta: {x: 53.9103, y: 99.969}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &586293115
 MonoBehaviour:
@@ -700,7 +700,7 @@ MonoBehaviour:
   slots:
   - {fileID: 1478971695}
   - {fileID: 1285527248}
-  nextSceneName: Knjiznica
+  nextSceneName: Ferscape
   anim: {fileID: 271152351}
   current: {fileID: 271152350}
   currentSound: {fileID: 1135509368}
@@ -2379,8 +2379,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -197.95264, y: 35.301}
-  m_SizeDelta: {x: 92.0633, y: 322.2318}
+  m_AnchoredPosition: {x: -129.28261, y: 21.7237}
+  m_SizeDelta: {x: 65.8584, y: 210.9163}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2033534359
 MonoBehaviour:

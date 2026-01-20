@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CrnaKnjiga
   m_EditorClassIdentifier: Assembly-CSharp::Item
   tile: {fileID: 0}
-  type: 0
+  type: 5
   actionType: 0
   range: {x: 5, y: 4}
   image: {fileID: -2300180268919857234, guid: e7ffc30965bad0b41a03b3e8f186bace, type: 3}
