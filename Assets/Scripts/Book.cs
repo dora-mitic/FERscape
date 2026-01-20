@@ -20,6 +20,7 @@ public class Book : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log("Book Awake pozvan na: " + gameObject.name + " boja: " + color);
         baseScale = transform.localScale;
        
         Button button = GetComponent<Button>();

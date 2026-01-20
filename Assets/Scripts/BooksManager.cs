@@ -108,12 +108,11 @@ public class BooksManager : MonoBehaviour
             }
         }
 
-        Debug.Log("Knjige tocno poslozene – EXIT!");
+        Debug.Log("Knjige ispravno posložene – EXIT!");
 
         SFXManager.instance.PlayDrawerOpen();
 
-
-        // OTVORI LADICU TEK NAKON RJEŠENJA
+        // OTVORI LADICU TEK NAKON ŠTO SU KNJIGE ISPRAVNO POSLOŽENE
         if (drawer != null)
         {
             drawer.SetActive(true);

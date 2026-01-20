@@ -18,21 +18,23 @@ public class BookSlot : MonoBehaviour
     }
 
     public void SetBook(Book book)
-{
-    currentBook = book;
-    if (book != null)
     {
-        
-        
-        book.CurrentSlot = this;
-        book.transform.SetParent(transform);
-        book.transform.localPosition = Vector3.zero;
-        book.transform.localScale = bookScale;
-        
-        
-        book.RefreshBaseScale();
+        Debug.Log("SetBook pozvan na slotu " + index + " s knjigom: " + (book != null ? book.gameObject.name : "null"));
+        currentBook = book;
+        if (book != null)
+        {
+            
+            
+            book.CurrentSlot = this;
+            book.transform.SetParent(transform);
+            book.transform.localPosition = Vector3.zero;
+            book.transform.localScale = bookScale;
+            
+            
+            book.RefreshBaseScale();
+            Debug.Log("Knjiga " + book.gameObject.name + " je stavljena u slot " + index);
+        }
     }
-}
 
 
     public bool IsCorrect()
