@@ -18,8 +18,6 @@ public class LockDropZone : MonoBehaviour, IDropHandler
 
     public GameObject lozinkaObjekt;
 
-    public SFXManager sfxManager;
-
     public bool isOpened = false;
 
     IEnumerator WaitOneSecond()
@@ -27,8 +25,6 @@ public class LockDropZone : MonoBehaviour, IDropHandler
         Debug.Log("Čekam 1 sekundu...");
         yield return new WaitForSeconds(2f);
         Debug.Log("Gotovo!");
-        sfxManager.PlayElectricDamage();
-        yield return new WaitForSeconds(1f);
         Zoomed.SetActive(false);
     }
 
