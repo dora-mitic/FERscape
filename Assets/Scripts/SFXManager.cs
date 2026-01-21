@@ -12,6 +12,8 @@ public class SFXManager : MonoBehaviour
     public AudioClip electricDamage;   // Ovo će biti "qubodupElectricityDamage01"
     public AudioClip soundEffect;      // Ovo će biti "sound-effect-4971"
 
+    public AudioClip elevatorSound; 
+
     void Awake()
     {
         if (instance == null)
@@ -45,5 +47,10 @@ public class SFXManager : MonoBehaviour
     public void PlayEffect()
     {
         audioSource.PlayOneShot(soundEffect);
+    }
+
+    public void PlayElevatorSound()
+    {
+        audioSource.PlayOneShot(elevatorSound);
     }
 }

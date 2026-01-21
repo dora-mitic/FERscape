@@ -653,6 +653,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2413122325911499248, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
+      propertyPath: m_text
+      value: NAZAD
+      objectReference: {fileID: 0}
     - target: {fileID: 6181267367535593193, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1714,6 +1718,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 57238645}
     m_Modifications:
+    - target: {fileID: 1775316983722519070, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_text
+      value: SKUPI
+      objectReference: {fileID: 0}
     - target: {fileID: 2418861682638185293, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1846,20 +1854,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: dkaPapir1
       objectReference: {fileID: 0}
+    - target: {fileID: 5725259956096495291, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_text
+      value: Trag pronaden!
+      objectReference: {fileID: 0}
     - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 638783615}
     - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1779359239}
+    - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
@@ -1867,11 +1891,23 @@ PrefabInstance:
       value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: PlayEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: SFXManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7275093842306883886, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
@@ -2205,6 +2241,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 686586258}
     m_Modifications:
+    - target: {fileID: 2413122325911499248, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
+      propertyPath: m_text
+      value: NAZAD
+      objectReference: {fileID: 0}
     - target: {fileID: 3238824802426388376, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: canvas
       value: 
@@ -2943,7 +2983,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1779359239}
         m_TargetAssemblyTypeName: SFXManager, Assembly-CSharp
-        m_MethodName: PlayClickSound
+        m_MethodName: PlayEffect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3857,6 +3897,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2413122325911499248, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
+      propertyPath: m_text
+      value: NAZAD
+      objectReference: {fileID: 0}
     - target: {fileID: 3238824802426388376, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: textFrequency
       value: 
@@ -4076,6 +4120,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1762302784328118691, guid: 05d2167bacff44ae3acc060484fce7c9, type: 3}
+    - target: {fileID: 2413122325911499248, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
+      propertyPath: m_text
+      value: NAZAD
+      objectReference: {fileID: 0}
     - target: {fileID: 3238824802426388376, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: textFrequency
       value: 
@@ -4994,6 +5042,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2079049778}
     m_Modifications:
+    - target: {fileID: 1775316983722519070, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_text
+      value: NAZAD
+      objectReference: {fileID: 0}
     - target: {fileID: 2418861682638185293, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -5101,6 +5153,10 @@ PrefabInstance:
     - target: {fileID: 4499652256556230643, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_Name
       value: CrnaKnjiga
+      objectReference: {fileID: 0}
+    - target: {fileID: 5725259956096495291, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_text
+      value: Trag pronaden!
       objectReference: {fileID: 0}
     - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -5490,6 +5546,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2079049778}
     m_Modifications:
+    - target: {fileID: 1775316983722519070, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_text
+      value: SKUPI
+      objectReference: {fileID: 0}
     - target: {fileID: 2418861682638185293, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -5601,6 +5661,10 @@ PrefabInstance:
     - target: {fileID: 4499652256556230643, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_Name
       value: Baterija
+      objectReference: {fileID: 0}
+    - target: {fileID: 5725259956096495291, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_text
+      value: Trag pronaden!
       objectReference: {fileID: 0}
     - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -6331,7 +6395,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2041620041329228759, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2041620041329228759, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -6342,8 +6406,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1999955356}
     - target: {fileID: 2041620041329228759, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1779359239}
+    - target: {fileID: 2041620041329228759, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041620041329228759, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041620041329228759, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SFXManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2041620041329228759, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
@@ -6353,10 +6429,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2041620041329228759, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2262351751079677782, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -3762927426212265137, guid: 3ec981975db9844a4a7df848d92697a6, type: 3}
+    - target: {fileID: 2413122325911499248, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
+      propertyPath: m_text
+      value: NAZAD
+      objectReference: {fileID: 0}
     - target: {fileID: 3238824802426388376, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: canvas
       value: 
@@ -6556,7 +6640,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1775316983722519070, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_text
-      value: ZOOM OUT
+      value: NAZAD
       objectReference: {fileID: 0}
     - target: {fileID: 1775316983722519070, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_fontSize
@@ -6754,6 +6838,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1293508895}
     m_Modifications:
+    - target: {fileID: 1775316983722519070, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_text
+      value: SKUPI
+      objectReference: {fileID: 0}
     - target: {fileID: 2418861682638185293, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -6853,6 +6941,10 @@ PrefabInstance:
     - target: {fileID: 4499652256556230643, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_Name
       value: dkaPapir2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5725259956096495291, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_text
+      value: Trag pronaden!
       objectReference: {fileID: 0}
     - target: {fileID: 6023911338506682926, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -7042,7 +7134,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1779359239}
         m_TargetAssemblyTypeName: SFXManager, Assembly-CSharp
-        m_MethodName: PlayClickSound
+        m_MethodName: PlayEffect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7221,17 +7313,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 652704134}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1779359239}
+        m_TargetAssemblyTypeName: SFXManager, Assembly-CSharp
+        m_MethodName: PlayEffect
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &612055679
 MonoBehaviour:
@@ -7703,17 +7795,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 652704134}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1779359239}
+        m_TargetAssemblyTypeName: SFXManager, Assembly-CSharp
+        m_MethodName: PlayEffect
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &638783619
 MonoBehaviour:
@@ -7931,6 +8023,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1779359239}
+        m_TargetAssemblyTypeName: SFXManager, Assembly-CSharp
+        m_MethodName: PlayEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &672588542 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6552001240257727950, guid: a05c554fbb02144b4acde9c1784c12ba, type: 3}
@@ -8126,7 +8230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &686586258
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8729,6 +8833,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 686586258}
     m_Modifications:
+    - target: {fileID: 1775316983722519070, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_text
+      value: SKUPI
+      objectReference: {fileID: 0}
     - target: {fileID: 2418861682638185293, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -8860,6 +8968,10 @@ PrefabInstance:
     - target: {fileID: 5492024620426898368, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -135
+      objectReference: {fileID: 0}
+    - target: {fileID: 5725259956096495291, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_text
+      value: Trag pronaden!
       objectReference: {fileID: 0}
     - target: {fileID: 6023911338506682926, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -9257,7 +9369,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1779359239}
         m_TargetAssemblyTypeName: SFXManager, Assembly-CSharp
-        m_MethodName: PlayClickSound
+        m_MethodName: PlayEffect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9506,6 +9618,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2079049778}
     m_Modifications:
+    - target: {fileID: 1775316983722519070, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_text
+      value: SKUPI
+      objectReference: {fileID: 0}
     - target: {fileID: 2418861682638185293, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -9649,6 +9765,10 @@ PrefabInstance:
     - target: {fileID: 4499652256556230643, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5725259956096495291, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_text
+      value: Trag pronaden!
       objectReference: {fileID: 0}
     - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -10552,6 +10672,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4243682867639803392, guid: a05c554fbb02144b4acde9c1784c12ba, type: 3}
+      propertyPath: m_text
+      value: NAZAD
+      objectReference: {fileID: 0}
     - target: {fileID: 4263888847995469632, guid: a05c554fbb02144b4acde9c1784c12ba, type: 3}
       propertyPath: m_Pivot.x
       value: 0.50121206
@@ -11249,6 +11373,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2079049778}
     m_Modifications:
+    - target: {fileID: 1775316983722519070, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_text
+      value: SKUPI
+      objectReference: {fileID: 0}
     - target: {fileID: 2418861682638185293, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -11356,6 +11484,10 @@ PrefabInstance:
     - target: {fileID: 4499652256556230643, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_Name
       value: BijelaKnjiga
+      objectReference: {fileID: 0}
+    - target: {fileID: 5725259956096495291, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_text
+      value: Trag pronaden!
       objectReference: {fileID: 0}
     - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -12225,6 +12357,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1779359239}
+        m_TargetAssemblyTypeName: SFXManager, Assembly-CSharp
+        m_MethodName: PlayElevatorSound
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13275,6 +13419,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1779359239}
+        m_TargetAssemblyTypeName: SFXManager, Assembly-CSharp
+        m_MethodName: PlayElevatorSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!95 &1175047827 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 881067120452002262, guid: a05c554fbb02144b4acde9c1784c12ba, type: 3}
@@ -13437,6 +13593,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 5433242962983398269, guid: bbafaf538251e493484867005135671f, type: 3}
+    - target: {fileID: 2413122325911499248, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
+      propertyPath: m_text
+      value: NAZAD
+      objectReference: {fileID: 0}
     - target: {fileID: 3238824802426388376, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: textFrequency
       value: 
@@ -14189,7 +14349,7 @@ PrefabInstance:
       objectReference: {fileID: 1779359239}
     - target: {fileID: 2041620041329228759, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: PlayClickSound
+      value: PlayEffect
       objectReference: {fileID: 0}
     - target: {fileID: 2041620041329228759, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -14198,6 +14358,10 @@ PrefabInstance:
     - target: {fileID: 2041620041329228759, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2413122325911499248, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
+      propertyPath: m_text
+      value: NAZAD
       objectReference: {fileID: 0}
     - target: {fileID: 6181267367535593193, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: m_Pivot.x
@@ -14418,7 +14582,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1779359239}
         m_TargetAssemblyTypeName: SFXManager, Assembly-CSharp
-        m_MethodName: PlayClickSound
+        m_MethodName: PlayEffect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14481,7 +14645,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1293508895
 Transform:
   m_ObjectHideFlags: 0
@@ -15069,7 +15233,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1775316983722519070, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_text
-      value: ZOOM OUT
+      value: NAZAD
       objectReference: {fileID: 0}
     - target: {fileID: 1775316983722519070, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_fontSize
@@ -15228,6 +15392,10 @@ PrefabInstance:
     - target: {fileID: 2041620041329228759, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2413122325911499248, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
+      propertyPath: m_text
+      value: NAZAD
       objectReference: {fileID: 0}
     - target: {fileID: 3238824802426388376, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: textFrequency
@@ -15541,6 +15709,10 @@ PrefabInstance:
     - target: {fileID: 2041620041329228759, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2413122325911499248, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
+      propertyPath: m_text
+      value: NAZAD
       objectReference: {fileID: 0}
     - target: {fileID: 6181267367535593193, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: m_Pivot.x
@@ -17161,6 +17333,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1293508895}
     m_Modifications:
+    - target: {fileID: 2413122325911499248, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
+      propertyPath: m_text
+      value: NAZAD
+      objectReference: {fileID: 0}
     - target: {fileID: 4153242833230088841, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.0000047684
@@ -18962,11 +19138,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380357f0b95a2624fbe2c2c4e744b433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SFXManager
-  buttonClick: {fileID: 8300000, guid: e2aa7088f6d08e5478c4adee31935ccf, type: 3}
+  buttonClick: {fileID: 8300000, guid: 82c275d8d42a0564dba0b956b7ef10a9, type: 3}
   doorOpen: {fileID: 8300000, guid: 47013c51d079034499ab2f5c24106b0f, type: 3}
   drawerOpen: {fileID: 8300000, guid: aa7c7d2fe7506e441bdc735aa3bce27d, type: 3}
-  electricDamage: {fileID: 8300000, guid: a1506a0838ff5ba468ad9f3107639da2, type: 3}
-  soundEffect: {fileID: 8300000, guid: 2d223c1528a58488181ea47ee397a9d8, type: 3}
+  electricDamage: {fileID: 8300000, guid: 3033248b14e2c7e4ebea945c0ac4adec, type: 3}
+  soundEffect: {fileID: 8300000, guid: e2aa7088f6d08e5478c4adee31935ccf, type: 3}
+  elevatorSound: {fileID: 8300000, guid: d52d6680546b44ac59318e5097ad2e27, type: 3}
 --- !u!82 &1779359240
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21558,6 +21735,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -3743621169052018057, guid: 84fe3a3fe82804797ba0d7e3d3799503, type: 3}
+    - target: {fileID: 2413122325911499248, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
+      propertyPath: m_text
+      value: NAZAD
+      objectReference: {fileID: 0}
     - target: {fileID: 3238824802426388376, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: canvas
       value: 
@@ -21986,6 +22167,10 @@ PrefabInstance:
     - target: {fileID: 1456523109364860454, guid: a05c554fbb02144b4acde9c1784c12ba, type: 3}
       propertyPath: m_Name
       value: DrawerLock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243682867639803392, guid: a05c554fbb02144b4acde9c1784c12ba, type: 3}
+      propertyPath: m_text
+      value: NAZAD
       objectReference: {fileID: 0}
     - target: {fileID: 4263888847995469632, guid: a05c554fbb02144b4acde9c1784c12ba, type: 3}
       propertyPath: m_Pivot.x
@@ -22508,6 +22693,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 686586258}
     m_Modifications:
+    - target: {fileID: 1775316983722519070, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_text
+      value: SKUPI
+      objectReference: {fileID: 0}
     - target: {fileID: 3836348202633873647, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: inventoryManager
       value: 
@@ -22600,6 +22789,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5725259956096495291, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_text
+      value: Trag pronaden!
+      objectReference: {fileID: 0}
     - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -22618,7 +22811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: PlayClickSound
+      value: PlayEffect
       objectReference: {fileID: 0}
     - target: {fileID: 6145053979653578598, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -22885,7 +23078,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1779359239}
         m_TargetAssemblyTypeName: SFXManager, Assembly-CSharp
-        m_MethodName: PlayClickSound
+        m_MethodName: PlayEffect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22955,6 +23148,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1779359239}
+        m_TargetAssemblyTypeName: SFXManager, Assembly-CSharp
+        m_MethodName: PlayEffect
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

@@ -11,7 +11,7 @@ public class SliderObject : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
     Vector2 startPos;
     float parentWidth;
 
-    string correctAnswer = "6.3";
+    //string correctAnswer = "6.3";
     public TextFrequency textFrequency;
 
     float freq;
@@ -65,7 +65,10 @@ public class SliderObject : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if (textFrequency.get() == correctAnswer) 
+        string inputText = textFrequency.get();
+        
+        // Prihvaća oba formata: "6.3" i "6,3"
+        if (inputText == "6.3" || inputText == "6,3")
         {
             Debug.Log("Correct frequency set!");
             teleType.enabled = true;
