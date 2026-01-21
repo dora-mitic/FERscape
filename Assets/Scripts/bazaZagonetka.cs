@@ -909,7 +909,7 @@ public class bazaZagonetka : MonoBehaviour
         listaZaposlenika.Add(new zaposlenik(634, "Darinka", "Ivanković", "C-209"));
         listaZaposlenika.Add(new zaposlenik(635, "Antonija", "Lončar", "D-323"));
         listaZaposlenika.Add(new zaposlenik(636, "Dalibor", "Vrdoljak", "D-232"));
-        listaZaposlenika.Add(new zaposlenik(637, "Matija", "Turković", "D-248"));
+        listaZaposlenika.Add(new zaposlenik(637, "Matija", "Turković", "D-348"));
         listaZaposlenika.Add(new zaposlenik(638, "Zorka", "Vlašić", "C-259"));
         listaZaposlenika.Add(new zaposlenik(639, "Dražen", "Matković", "C-803"));
         listaZaposlenika.Add(new zaposlenik(640, "Dora", "Jurjević", "C-806"));

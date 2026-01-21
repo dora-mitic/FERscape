@@ -26,6 +26,8 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         item = newItem;
         image.sprite = newItem.image;
     }
+
+    // Drag and drop
     public void OnBeginDrag(PointerEventData eventData) {
         image.raycastTarget = false;
         parentAfterDrag = transform.parent;
@@ -46,7 +48,7 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         if (item.type != requiredType1 && item.type != requiredType2 && item.type != requiredType3) return;
         var canvas = GameObject.Find("Canvas");  
         if (item.type == requiredType1)
-        {  
+        {         // ime točno kao u Hierarchy
             Debug.Log("papir kliknut!");
             GameObject collectedZoomed = canvas.transform
                               .Find("Library/CollectedZoomed")
@@ -55,14 +57,14 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             
         }
         if (item.type == requiredType2)
-        {  
+        {         // ime točno kao u Hierarchy
             GameObject collectedZoomed2 = canvas.transform
                               .Find("Hallway/CollectedZoomed2")
                               .gameObject;
             collectedZoomed2.SetActive(true);
         }
         if (item.type == requiredType3)
-        {   
+        {           // ime točno kao u Hierarchy
             Debug.Log("Robotic kliknut!");
             GameObject collectedZoomed3 = canvas.transform
                               .Find("Office/CollectedZoomed3")

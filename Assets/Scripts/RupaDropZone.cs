@@ -26,7 +26,7 @@ public class RupaDropZone : MonoBehaviour, IDropHandler
     IEnumerator WaitOneSecond()
     {
         Debug.Log("Čekam 1 sekundu...");
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(2.5f);
         Debug.Log("Gotovo!");
         textBezBaterije.SetActive(false);
         textBezRobota.SetActive(false);

@@ -12,10 +12,14 @@ public class ClosedDrawer : MonoBehaviour, IPointerClickHandler
     public GameObject puzzleZoomed;
     public GameObject locker;
 
+    // OVO SE POZIVA kada korisnik klikne UI element
     public void OnPointerClick(PointerEventData eventData)
     {
+        Debug.Log("Klik! isOpen = " + isOpen);
+
         if (isOpen)
         {
+            Debug.Log("unutra");
             if (firstOpen)
             {
                 firstOpen = false;
