@@ -23,6 +23,10 @@ public class RupaDropZone : MonoBehaviour, IDropHandler
     public GameObject textBezRobota;
     public GameObject canvas;
 
+    public GameObject AudioBezBaterije;
+
+    public GameObject AudioBezRobota;
+
     IEnumerator WaitOneSecond()
     {
         Debug.Log("Čekam 1 sekundu...");
