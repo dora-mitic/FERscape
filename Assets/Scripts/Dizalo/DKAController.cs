@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using TMPro;
 public class DKAController : MonoBehaviour
 {
     // pocetno stanje (ne error)
@@ -20,7 +20,7 @@ public class DKAController : MonoBehaviour
 
     public GameObject scriptHolder;
 
-
+    public TMP_Text stateDisplayText;
 
     
 
@@ -68,6 +68,7 @@ public class DKAController : MonoBehaviour
     public void ResetDKA()
     {
         currentState = startState;
+        UpdateStateDisplay();
         Debug.Log("reset -> stanje " + currentState);
     }
 
@@ -85,9 +86,16 @@ public class DKAController : MonoBehaviour
         }
 
         currentState = nextState;
+        UpdateStateDisplay();
         Debug.Log("input " + input + " -> stanje " + currentState);
 
         provjeriStanje();
+    }
+
+    private void UpdateStateDisplay()
+    {
+        if (stateDisplayText != null)
+            stateDisplayText.text = "Stanje: " + currentState;
     }
 
     private void provjeriStanje()
