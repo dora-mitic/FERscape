@@ -2382,6 +2382,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1302723820812287101, guid: b639719110eeb4b10b860efd3ce4d6d4, type: 3}
+    - target: {fileID: 2413122325911499248, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
+      propertyPath: m_text
+      value: NAZAD
+      objectReference: {fileID: 0}
     - target: {fileID: 3238824802426388376, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: canvas
       value: 
@@ -2674,6 +2678,7 @@ MonoBehaviour:
   openDoor: {fileID: 261042161}
   locker: {fileID: 1160263911}
   lockDropZone: {fileID: 962313924}
+  sfxManager: {fileID: 1779359239}
 --- !u!1 &284609039
 GameObject:
   m_ObjectHideFlags: 0
@@ -11349,6 +11354,7 @@ MonoBehaviour:
   Zoomed: {fileID: 1160263911}
   animator: {fileID: 7275010}
   lozinkaObjekt: {fileID: 0}
+  sfxManager: {fileID: 1779359239}
   isOpened: 0
 --- !u!1 &973605489
 GameObject:
@@ -22028,6 +22034,7 @@ MonoBehaviour:
   isOpen: 0
   openDoor: {fileID: 1683709774}
   locker: {fileID: 937904481}
+  sfxManager: {fileID: 1779359239}
 --- !u!114 &2128732447 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5596385238810980401, guid: a05c554fbb02144b4acde9c1784c12ba, type: 3}
@@ -22776,6 +22783,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DrawerLock
       objectReference: {fileID: 0}
+    - target: {fileID: 1456523109364860454, guid: a05c554fbb02144b4acde9c1784c12ba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4243682867639803392, guid: a05c554fbb02144b4acde9c1784c12ba, type: 3}
       propertyPath: m_text
       value: NAZAD
@@ -23301,6 +23312,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 686586258}
     m_Modifications:
+    - target: {fileID: 1775316983722519070, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_text
+      value: SKUPI
+      objectReference: {fileID: 0}
     - target: {fileID: 2418861682638185293, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_Sprite
       value: 
