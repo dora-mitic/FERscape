@@ -2205,6 +2205,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 686586258}
     m_Modifications:
+    - target: {fileID: 2262351751079677782, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1302723820812287101, guid: b639719110eeb4b10b860efd3ce4d6d4, type: 3}
     - target: {fileID: 3238824802426388376, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
       propertyPath: canvas
       value: 
@@ -8126,7 +8130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &686586258
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14481,7 +14485,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1293508895
 Transform:
   m_ObjectHideFlags: 0
@@ -15078,6 +15082,18 @@ PrefabInstance:
     - target: {fileID: 1775316983722519070, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: m_fontSizeBase
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2418861682638185293, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7668595514341472567, guid: cf869b03d64d54234aeec00d07016464, type: 3}
+    - target: {fileID: 2426487353223932742, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 259.3922
+      objectReference: {fileID: 0}
+    - target: {fileID: 2426487353223932742, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 13.4135
       objectReference: {fileID: 0}
     - target: {fileID: 3836348202633873647, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: inventoryManager
@@ -22508,6 +22524,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 686586258}
     m_Modifications:
+    - target: {fileID: 2418861682638185293, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7668595514341472567, guid: cf869b03d64d54234aeec00d07016464, type: 3}
     - target: {fileID: 3836348202633873647, guid: 15311880cf5e1410f84fcd1915e115c3, type: 3}
       propertyPath: inventoryManager
       value: 
