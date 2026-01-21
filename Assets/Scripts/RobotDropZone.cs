@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using System.Collections;
+using NUnit.Framework;
 public class RobotDropZone : MonoBehaviour, IDropHandler
 {
     [Header("Koji ItemType prihvaća ova drop zona?")]
@@ -8,10 +9,14 @@ public class RobotDropZone : MonoBehaviour, IDropHandler
 
     public GameObject BaterijaObjekt;
 
+    public bool isRobot = true;
+
     public bool isActivated = false;
 
     public void Start()
     {
+
+        if(isRobot == false) return;
         Transform dijete = transform.Find("Baterija");
         if (dijete.gameObject.activeSelf == true) {
             isActivated = true;
@@ -30,7 +35,10 @@ public class RobotDropZone : MonoBehaviour, IDropHandler
             Debug.Log("Ispravan item spušten: " + droppedItem.item.type);
             Destroy(droppedItem.gameObject);
             BaterijaObjekt.SetActive(true);
-            isActivated = true;
+            if (isRobot == true)
+            {
+                isActivated = true;
+            }
         }
         else
         {

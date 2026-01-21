@@ -10,11 +10,20 @@ public class DKAController : MonoBehaviour
 
     // tocno stanje
     public int winState = 7;
+    public Animator animator;
+
+    public GameObject Zoomed;
+
+    public AudioClip correctSound;
+
+    public GameObject Office;
+
+    public GameObject scriptHolder;
+
+
 
     
-    
-    public GameObject pocetakLifta;
-    public GameObject krajLifta;
+
 
     // prijelazi: [stanje, input]
     // input: 1, 2, 3 -> indeksi 0,1,2
@@ -90,9 +99,16 @@ public class DKAController : MonoBehaviour
         if (currentState == winState )
         {
             Debug.Log("pobjeda - tocno stanje 7");
-            
-            krajLifta.SetActive(true);
-            pocetakLifta.SetActive(false);
+
+            animator.SetTrigger("OpenLiftDoor");
+
+            Zoomed.SetActive(false);
+
+            AudioSource.PlayClipAtPoint(correctSound, Camera.main.transform.position);
+
+            Office.SetActive(true);
+
+            scriptHolder.SetActive(false);
         }
     }
 }
