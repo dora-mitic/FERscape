@@ -11,7 +11,7 @@ public class SliderObject : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
     Vector2 startPos;
     float parentWidth;
 
-    string correctAnswer = "6.3";
+    public string correctAnswer = "1.3";
     public TextFrequency textFrequency;
 
     float freq;
