@@ -68,7 +68,7 @@ public class SliderObject : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
         string inputText = textFrequency.get();
         
         // Prihvaća oba formata: "6.3" i "6,3"
-        if (inputText == "6.3" || inputText == "6,3")
+        if (inputText == correctAnswer || inputText == "1,3")
         {
             Debug.Log("Correct frequency set!");
             teleType.enabled = true;
