@@ -5,7 +5,8 @@ public class gumbi : MonoBehaviour
 {
     public void zapocniIgru()
     {
-        SceneManager.LoadScene("OtvorenPrekidac");   }
+        SceneManager.LoadScene("OtvorenPrekidac");   
+    }
 
     public void ucitajMenu()
     {

@@ -15,8 +15,11 @@ public class PuzzleManager : MonoBehaviour
 
     public GameObject currentSound;
 
+    public GameObject mrak;
+
     void Start()
     {
+        pocetakScene();
         CheckPuzzle();             // provjera odmah na početku
     }
 
@@ -61,4 +64,14 @@ public class PuzzleManager : MonoBehaviour
         }
     }
 
+    public void pocetakScene()
+    {
+        IEnumerator CekajKrajAnimacije()
+        {
+            Debug.Log("Čekam");
+            yield return new WaitForSeconds(7f);
+            mrak.SetActive(false);
+        }
+        StartCoroutine(CekajKrajAnimacije());
+    }
 }
