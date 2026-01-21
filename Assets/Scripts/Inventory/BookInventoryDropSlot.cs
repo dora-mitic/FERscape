@@ -17,20 +17,31 @@ public class BookInventoryDropSlot : MonoBehaviour, IDropHandler
         InventoryItem invItem = eventData.pointerDrag.GetComponent<InventoryItem>();
         if (invItem == null) return;
 
-        // provjera po imenu
+        Debug.Log("Prebacujem knjugu: " + invItem.item.name);
+
+        // provjera po imenu - sada prihvaćamo bilo koju boju
         BookColor droppedColor = invItem.item.name.Contains("Bijela") ? BookColor.White : BookColor.Black;
-        if (droppedColor != requiredColor) return;
 
         // obriši item iz inventoryja
         Destroy(invItem.gameObject);
-
+        Debug.Log("Provjera 1: prefabi");
+        
         // kreiraj novu Book instance u puzzle
         GameObject bookPrefab = (droppedColor == BookColor.White) ? whiteBookPrefab : blackBookPrefab;
-        GameObject newBookGo = Instantiate(bookPrefab);
+        Debug.Log("bookPrefab: " + (bookPrefab != null ? bookPrefab.name : "NULL"));
+        Debug.Log("targetBookSlot: " + (targetBookSlot != null ? targetBookSlot.gameObject.name : "NULL"));
+        // Kreira knjigu s targetBookSlot kao roditeljom (SetBook će to podesiti svejedno)
+        GameObject newBookGo = Instantiate(bookPrefab, targetBookSlot.transform);
         Book newBook = newBookGo.GetComponent<Book>();
+        // Postavi boju na osnovu prefaba koji je korišten
+        newBook.color = droppedColor;
+        
+        Debug.Log("Stvorena nova knjiga: " + newBook.gameObject.name + " boja: " + newBook.color);
 
         // stavi je u slot
         targetBookSlot.SetBook(newBook);
+        
+        Debug.Log("Knjiga stavljena u slot!");
 
         isFilled = true;
 

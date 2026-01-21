@@ -3,10 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class gumbi : MonoBehaviour
 {
-
     public void zapocniIgru()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("OtvorenPrekidac");   
+    }
+
+    public void ucitajMenu()
+    {
+        SceneManager.LoadScene("main menu");
     }
 
 

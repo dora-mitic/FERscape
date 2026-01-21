@@ -64,7 +64,7 @@ public class LockController : MonoBehaviour
             Debug.Log("Lokot otkljucan! Kod = " + code);
             closedDrawer.isOpen = true;
             anim.SetTrigger("OpenLock");
-
+            SFXManager.instance.PlayElectricDamage();
         }
     }
 }

@@ -11,13 +11,15 @@ public class SliderObject : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
     Vector2 startPos;
     float parentWidth;
 
-    string correctAnswer = "6.3";
+    //string correctAnswer = "6.3";
     public TextFrequency textFrequency;
 
     float freq;
 
 
     public TeleType teleType;
+
+    public GameObject glas;
 
     void Start()
     {
@@ -55,7 +57,7 @@ public class SliderObject : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 
     // 7. Pretvori taj omjer u frekvenciju (ovdje 100–1000)
     float minFreq = 0f;
-    float maxFreq = 20f;
+    float maxFreq = 10f;
     freq = Mathf.Lerp(minFreq, maxFreq, t);
 
     // 8. Pošalji frekvenciju u text input
@@ -65,9 +67,13 @@ public class SliderObject : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if (textFrequency.get() == correctAnswer) 
+        string inputText = textFrequency.get();
+        
+        // Prihvaća oba formata: "6.3" i "6,3"
+        if (inputText == "6.3" || inputText == "6,3")
         {
             Debug.Log("Correct frequency set!");
+            glas.SetActive(true);
             teleType.enabled = true;
         }
     }
