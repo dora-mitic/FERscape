@@ -19874,11 +19874,9 @@ MonoBehaviour:
   EventSys: {fileID: 1873315259}
   Magnifier: {fileID: 305590094}
   robotDropZone: {fileID: 1374039405}
-  textBezBaterije: {fileID: 1355602675}
-  textBezRobota: {fileID: 753141189}
+  textBezBaterije: {fileID: 192681450}
+  textBezRobota: {fileID: 284609039}
   canvas: {fileID: 1262099895}
-  AudioBezBaterije: {fileID: 284609039}
-  AudioBezRobota: {fileID: 192681450}
 --- !u!114 &1814447766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21512,7 +21510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2079049778
 RectTransform:
   m_ObjectHideFlags: 0
