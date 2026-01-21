@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+
 public class DKAController : MonoBehaviour
 {
     // pocetno stanje (ne error)
@@ -22,7 +23,8 @@ public class DKAController : MonoBehaviour
 
     public TMP_Text stateDisplayText;
 
-    
+
+
 
 
     // prijelazi: [stanje, input]

@@ -9,10 +9,8 @@ public class Izlaz : MonoBehaviour,  IPointerClickHandler
     public GameObject openDoor;
     public GameObject locker;
     public LockDropZone lockDropZone;
-
     public SFXManager sfxManager;
 
-    
 
     // OVO SE POZIVA kada korisnik klikne UI element
     public void OnPointerClick(PointerEventData eventData)
@@ -23,7 +21,6 @@ public class Izlaz : MonoBehaviour,  IPointerClickHandler
         {
             sfxManager.PlayDoorOpen();
             openDoor.SetActive(true);
-
         }
         else
         {

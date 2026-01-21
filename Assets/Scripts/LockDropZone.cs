@@ -18,9 +18,10 @@ public class LockDropZone : MonoBehaviour, IDropHandler
 
     public GameObject lozinkaObjekt;
 
+    public bool isOpened = false;
+
     public SFXManager sfxManager;
 
-    public bool isOpened = false;
 
     IEnumerator WaitOneSecond()
     {

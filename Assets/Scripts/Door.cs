@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.VFX;
 
 public class Door : MonoBehaviour,  IPointerClickHandler
 {
@@ -12,8 +13,6 @@ public class Door : MonoBehaviour,  IPointerClickHandler
 
     public SFXManager sfxManager;
 
-    
-
     // OVO SE POZIVA kada korisnik klikne UI element
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -22,6 +21,7 @@ public class Door : MonoBehaviour,  IPointerClickHandler
         {
             openDoor.SetActive(true);
             sfxManager.PlayDoorOpen();
+
         }
         else
         {
