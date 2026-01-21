@@ -6255,27 +6255,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 424011068932849380, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 284
+      value: 294.68
       objectReference: {fileID: 0}
     - target: {fileID: 424011068932849380, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 219.5
+      value: 227.05003
       objectReference: {fileID: 0}
     - target: {fileID: 424011068932849380, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 215.48
+      value: 147.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 895186166489869710, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 628.9692
       objectReference: {fileID: 0}
     - target: {fileID: 895186166489869710, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 74
+      value: -16.8269
       objectReference: {fileID: 0}
     - target: {fileID: 895186166489869710, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 634.9
+      value: 606.35004
       objectReference: {fileID: 0}
     - target: {fileID: 2471835340642086011, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1093.208
+      value: 1093.2
       objectReference: {fileID: 0}
     - target: {fileID: 2471835340642086011, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_SizeDelta.y
@@ -6283,11 +6287,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2471835340642086011, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 222.4
+      value: 227.05
       objectReference: {fileID: 0}
     - target: {fileID: 2471835340642086011, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 399
+      value: 336.2
       objectReference: {fileID: 0}
     - target: {fileID: 2606159811305020902, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_SizeDelta.x
@@ -6439,11 +6443,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6700440322338379263, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -31
+      value: -26
       objectReference: {fileID: 0}
     - target: {fileID: 6700440322338379263, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 565.55
+      value: 537
       objectReference: {fileID: 0}
     - target: {fileID: 8626181312330127920, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_VertexColorAlwaysGammaSpace
@@ -6455,11 +6459,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8921219117027824377, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 614.9
+      value: 482
       objectReference: {fileID: 0}
     - target: {fileID: 9164717433088190867, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1096.1
+      value: 1093.2
       objectReference: {fileID: 0}
     - target: {fileID: 9164717433088190867, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_SizeDelta.y
@@ -6467,11 +6471,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9164717433088190867, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 220.95
+      value: 227.05003
       objectReference: {fileID: 0}
     - target: {fileID: 9164717433088190867, guid: 3d1160fcef0de1c428130a542379c1cf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 320.74
+      value: 257.94
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
