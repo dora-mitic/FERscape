@@ -48,6 +48,13 @@ public class RupaDropZone : MonoBehaviour, IDropHandler
         if (droppedItem.item.type == requiredType)
         {
             Debug.Log("Ispravan item spušten: " + droppedItem.item.type);
+            // Osvježi stanje robotDropZone prije provjeravanja
+            Transform baterijaTransform = robotDropZone.transform.Find("Baterija");
+            if (baterijaTransform != null && baterijaTransform.gameObject.activeSelf)
+            {
+                robotDropZone.isActivated = true;
+            }
+            
             if (robotDropZone.isActivated == false)
             {
                 Debug.Log("Robot nije aktiviran, ne može se nastaviti.");
