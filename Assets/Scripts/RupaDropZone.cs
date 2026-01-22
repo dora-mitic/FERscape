@@ -34,6 +34,8 @@ public class RupaDropZone : MonoBehaviour, IDropHandler
         Debug.Log("Gotovo!");
         textBezBaterije.SetActive(false);
         textBezRobota.SetActive(false);
+        AudioBezBaterije.SetActive(false);
+        AudioBezRobota.SetActive(false);
     }
 
 
@@ -50,6 +52,7 @@ public class RupaDropZone : MonoBehaviour, IDropHandler
             {
                 Debug.Log("Robot nije aktiviran, ne može se nastaviti.");
                 textBezBaterije.SetActive(true);
+                AudioBezBaterije.SetActive(true);
                 StartCoroutine(WaitOneSecond());
                 return;
             }
@@ -72,6 +75,7 @@ public class RupaDropZone : MonoBehaviour, IDropHandler
     {
         Debug.Log("Rupa kliknuta.");
         textBezRobota.SetActive(true);
+        AudioBezRobota.SetActive(true);
         StartCoroutine(WaitOneSecond());
         
     }

@@ -10215,8 +10215,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rupa je preuska za tebe. Mozda u sobi postoji nesto dovoljno malo da prode
-    kroz nju...
+  m_text: Ne mogu se provuci unutra...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c191894f687ef44db847fdc5c24c8c3d, type: 2}
   m_sharedMaterial: {fileID: -1147849323535622871, guid: c191894f687ef44db847fdc5c24c8c3d, type: 2}
@@ -15988,7 +15987,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Robot je iskljucen. Nedostaje mu baterija.
+  m_text: Robotu fali baterija.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c191894f687ef44db847fdc5c24c8c3d, type: 2}
   m_sharedMaterial: {fileID: -1147849323535622871, guid: c191894f687ef44db847fdc5c24c8c3d, type: 2}
@@ -20793,8 +20792,8 @@ MonoBehaviour:
   textBezBaterije: {fileID: 1355602675}
   textBezRobota: {fileID: 753141189}
   canvas: {fileID: 1262099895}
-  AudioBezBaterije: {fileID: 284609039}
-  AudioBezRobota: {fileID: 192681450}
+  AudioBezBaterije: {fileID: 192681450}
+  AudioBezRobota: {fileID: 284609039}
 --- !u!114 &1814447766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21011,6 +21010,7 @@ GameObject:
   - component: {fileID: 1841752390}
   - component: {fileID: 1841752389}
   - component: {fileID: 1841752388}
+  - component: {fileID: 1841752391}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -21132,6 +21132,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841752386}
   m_CullTransparentMesh: 1
+--- !u!114 &1841752391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841752386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a57236a849f8aa4ab9435977b04c43d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  IzbornikZoomed: {fileID: 841788193}
 --- !u!1 &1850534443 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8434965532887456299, guid: ee253d81c45d04eb5b0d4a6abc68083d, type: 3}
